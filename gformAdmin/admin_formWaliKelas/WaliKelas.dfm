@@ -1,6 +1,6 @@
 object formWaliKelas: TformWaliKelas
-  Left = 183
-  Top = 123
+  Left = 372
+  Top = 81
   Width = 1044
   Height = 593
   Caption = 'Wali Kelas'
@@ -29,104 +29,104 @@ object formWaliKelas: TformWaliKelas
     object Label4: TLabel
       Left = 16
       Top = 160
-      Width = 59
-      Height = 19
+      Width = 46
+      Height = 17
       Caption = 'Alamat'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label3: TLabel
       Left = 8
       Top = 128
-      Width = 112
-      Height = 19
+      Width = 94
+      Height = 17
       Caption = 'Jenis Kelamin'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label2: TLabel
       Left = 16
       Top = 80
-      Width = 47
-      Height = 19
+      Width = 37
+      Height = 17
       Caption = 'Nama'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label1: TLabel
       Left = 16
       Top = 32
-      Width = 69
-      Height = 19
-      Caption = 'NIK/NIP'
-      Font.Charset = DEFAULT_CHARSET
+      Width = 51
+      Height = 17
+      Caption = 'Nik/Nip'
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label5: TLabel
       Left = 16
       Top = 192
-      Width = 66
-      Height = 19
+      Width = 53
+      Height = 17
       Caption = 'Telepon'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label6: TLabel
       Left = 8
       Top = 224
-      Width = 125
-      Height = 19
+      Width = 98
+      Height = 17
       Caption = 'Mata Pelajaran'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label7: TLabel
       Left = 16
       Top = 256
-      Width = 91
-      Height = 19
+      Width = 73
+      Height = 17
       Caption = 'Pendidikan'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Label8: TLabel
       Left = 24
       Top = 294
-      Width = 52
-      Height = 19
+      Width = 40
+      Height = 17
       Caption = 'Status'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
@@ -228,6 +228,7 @@ object formWaliKelas: TformWaliKelas
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 3
+    OnClick = buttonHapusClick
   end
   object DBGrid1: TDBGrid
     Left = 16
@@ -241,5 +242,41 @@ object formWaliKelas: TformWaliKelas
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'SELECT * from wali_kelas'
+      'controls_cp=GET_ACP')
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'data_sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
+    Left = 648
+    Top = 56
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from wali_kelas')
+    Params = <>
+    Properties.Strings = (
+      'SELECT * FROM wali kelas')
+    Left = 720
+    Top = 56
+  end
+  object d1: TDataSource
+    DataSet = formConnection.zqWaliKelas
+    Left = 696
+    Top = 128
   end
 end

@@ -1,6 +1,6 @@
 object formAdmin: TformAdmin
-  Left = 277
-  Top = 170
+  Left = 298
+  Top = 107
   Width = 909
   Height = 540
   Caption = 'Admin'

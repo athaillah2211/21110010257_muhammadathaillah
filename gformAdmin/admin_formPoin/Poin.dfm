@@ -1,6 +1,6 @@
 object formPoin: TformPoin
-  Left = 464
-  Top = 179
+  Left = 457
+  Top = 118
   Width = 649
   Height = 540
   Caption = 'Poin'

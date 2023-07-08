@@ -4,7 +4,7 @@ object formUserLogin: TformUserLogin
   Width = 420
   Height = 421
   Caption = 'userLogin'
-  Color = clBtnFace
+  Color = 4259584
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

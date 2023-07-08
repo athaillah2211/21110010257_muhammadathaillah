@@ -1,10 +1,10 @@
 object formUserAdmin: TformUserAdmin
-  Left = 279
-  Top = 194
+  Left = 319
+  Top = 117
   Width = 762
   Height = 540
   Caption = 'userAdmin'
-  Color = clBtnFace
+  Color = clAqua
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

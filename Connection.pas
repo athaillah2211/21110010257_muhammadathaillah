@@ -9,7 +9,6 @@ uses
 
 type
   TformConnection = class(TForm)
-    Zconn: TZConnection;
     grbUserLogin: TGroupBox;
     dsUserLogin: TDataSource;
     zqUserLogin: TZQuery;
@@ -26,6 +25,7 @@ type
     grbWaliKelas: TGroupBox;
     dsWaliKelas: TDataSource;
     zqWaliKelas: TZQuery;
+    con1: TZConnection;
   private
     { Private declarations }
   public

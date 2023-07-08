@@ -4,7 +4,9 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Grids, DBGrids, StdCtrls;
+  Dialogs, Grids, DBGrids, StdCtrls,
+  DB, ZAbstractRODataset, ZAbstractDataset, ZDataset, ZAbstractConnection,
+  ZConnection;
 
 type
   TformWaliKelas = class(TForm)
@@ -29,6 +31,11 @@ type
     edt6: TEdit;
     edt7: TEdit;
     edt8: TEdit;
+    con1: TZConnection;
+    zqry1: TZQuery;
+    d1: TDataSource;
+    procedure buttonHapusClick(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -37,6 +44,7 @@ type
 
 var
   formWaliKelas: TformWaliKelas;
+  id:String;
 
 implementation
 
@@ -44,5 +52,21 @@ uses
   Connection;
 
 {$R *.dfm}
+
+procedure TformWaliKelas.DBGrid1CellClick(Column: TColumn);
+begin
+id := formConnection.zqWaliKelas.Fields[0].AsString;
+end;
+
+procedure TformWaliKelas.buttonHapusClick(Sender: TObject);
+begin
+formConnection.zqWaliKelas.SQL.Clear;
+formConnection.zqWaliKelas.SQL.Add('DELETE FROM user WHERE id="'+id+'")');
+formConnection.zqWaliKelas.ExecSQL;
+
+formConnection.zqWaliKelas.SQL.Clear;
+formConnection.zqWaliKelas.SQL.Add('SELECT * FROM user');
+formConnection.zqWaliKelas.ExecSQL;
+end;
 
 end.

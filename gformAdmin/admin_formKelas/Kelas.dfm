@@ -1,6 +1,6 @@
 object formKelas: TformKelas
-  Left = 439
-  Top = 181
+  Left = 435
+  Top = 111
   Width = 621
   Height = 540
   Caption = 'Kelas'

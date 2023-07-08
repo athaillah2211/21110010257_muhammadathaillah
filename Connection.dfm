@@ -1,6 +1,6 @@
 object formConnection: TformConnection
-  Left = 192
-  Top = 125
+  Left = 68
+  Top = 226
   Width = 1016
   Height = 540
   Caption = 'Connection'
@@ -37,8 +37,8 @@ object formConnection: TformConnection
       TabOrder = 0
     end
     object grbKelasAdmin: TGroupBox
-      Left = 32
-      Top = 160
+      Left = 248
+      Top = 32
       Width = 185
       Height = 105
       Caption = 'Kelas'
@@ -46,39 +46,20 @@ object formConnection: TformConnection
     end
     object grbPoinAdmin: TGroupBox
       Left = 32
-      Top = 288
+      Top = 160
       Width = 185
       Height = 105
       Caption = 'Poin'
       TabOrder = 2
     end
     object grbWaliKelas: TGroupBox
-      Left = 240
-      Top = 32
+      Left = 248
+      Top = 168
       Width = 185
-      Height = 105
+      Height = 97
       Caption = 'WaliKelas'
       TabOrder = 3
     end
-  end
-  object Zconn: TZConnection
-    ControlsCodePage = cGET_ACP
-    UTF8StringsAsWideField = False
-    AutoEncodeStrings = False
-    Properties.Strings = (
-      'mysql'
-      'controls_cp=GET_ACP')
-    Connected = True
-    HostName = 'localhost'
-    Port = 3306
-    Database = 'data_sekolah'
-    User = 'root'
-    Protocol = 'mysql'
-    LibraryLocation = 
-      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
-      'wa\libmysql.dll'
-    Left = 72
-    Top = 16
   end
   object dsUserLogin: TDataSource
     DataSet = zqUserLogin
@@ -86,7 +67,7 @@ object formConnection: TformConnection
     Top = 104
   end
   object zqUserLogin: TZQuery
-    Connection = Zconn
+    Connection = con1
     Active = True
     SQL.Strings = (
       'select * from user')
@@ -102,7 +83,8 @@ object formConnection: TformConnection
     Top = 144
   end
   object zqUserAdmin: TZQuery
-    Connection = Zconn
+    Connection = con1
+    Active = True
     SQL.Strings = (
       'SELECT * FROM user')
     Params = <>
@@ -111,41 +93,56 @@ object formConnection: TformConnection
   end
   object dsKelasAdmin: TDataSource
     DataSet = zqKelasAdmin
-    Left = 272
-    Top = 272
-  end
-  object zqKelasAdmin: TZQuery
-    Connection = Zconn
-    SQL.Strings = (
-      'SELECT * FROM kelas')
-    Params = <>
-    Left = 360
-    Top = 272
-  end
-  object zqPoinAdmin: TZQuery
-    Connection = Zconn
-    SQL.Strings = (
-      'SELECT * FROM poin')
-    Params = <>
-    Left = 360
-    Top = 400
-  end
-  object dsPoinAdmin: TDataSource
-    DataSet = zqPoinAdmin
-    Left = 272
-    Top = 400
-  end
-  object dsWaliKelas: TDataSource
-    DataSet = zqWaliKelas
     Left = 480
     Top = 144
   end
+  object zqKelasAdmin: TZQuery
+    SQL.Strings = (
+      'SELECT * FROM kelas')
+    Params = <>
+    Left = 552
+    Top = 144
+  end
+  object zqPoinAdmin: TZQuery
+    SQL.Strings = (
+      'SELECT * FROM poin')
+    Params = <>
+    Left = 336
+    Top = 272
+  end
+  object dsPoinAdmin: TDataSource
+    DataSet = zqPoinAdmin
+    Left = 264
+    Top = 272
+  end
+  object dsWaliKelas: TDataSource
+    DataSet = zqWaliKelas
+    Left = 496
+    Top = 280
+  end
   object zqWaliKelas: TZQuery
-    Connection = Zconn
+    Connection = con1
+    Active = True
     SQL.Strings = (
       'SELECT * FROM wali_kelas')
     Params = <>
-    Left = 568
-    Top = 144
+    Left = 560
+    Top = 280
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'data_sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
+    Left = 48
+    Top = 16
   end
 end

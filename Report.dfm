@@ -1,8 +1,8 @@
 object formReport: TformReport
-  Left = 336
-  Top = 178
+  Left = -206
+  Top = 416
   Width = 1044
-  Height = 540
+  Height = 496
   Caption = 'Report'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
