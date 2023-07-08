@@ -80,9 +80,9 @@ object formPoin: TformPoin
     end
     object mmNamaPoin: TMemo
       Left = 128
-      Top = 32
+      Top = 40
       Width = 249
-      Height = 49
+      Height = 33
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16

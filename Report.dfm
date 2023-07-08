@@ -1,6 +1,6 @@
 object formReport: TformReport
-  Left = -206
-  Top = 416
+  Left = 289
+  Top = 77
   Width = 1044
   Height = 496
   Caption = 'Report'

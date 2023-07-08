@@ -61,11 +61,11 @@ end;
 procedure TformWaliKelas.buttonHapusClick(Sender: TObject);
 begin
 formConnection.zqWaliKelas.SQL.Clear;
-formConnection.zqWaliKelas.SQL.Add('DELETE FROM user WHERE id="'+id+'")');
+formConnection.zqWaliKelas.SQL.Add('DELETE FROM wali_kelas WHERE id="'+id+'"');
 formConnection.zqWaliKelas.ExecSQL;
 
 formConnection.zqWaliKelas.SQL.Clear;
-formConnection.zqWaliKelas.SQL.Add('SELECT * FROM user');
+formConnection.zqWaliKelas.SQL.Add('SELECT * FROM wali_kelas');
 formConnection.zqWaliKelas.ExecSQL;
 end;
 

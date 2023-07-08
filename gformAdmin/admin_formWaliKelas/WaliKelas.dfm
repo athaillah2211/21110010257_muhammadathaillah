@@ -1,6 +1,6 @@
 object formWaliKelas: TformWaliKelas
-  Left = 372
-  Top = 81
+  Left = 177
+  Top = 103
   Width = 1044
   Height = 593
   Caption = 'Wali Kelas'
@@ -21,9 +21,9 @@ object formWaliKelas: TformWaliKelas
     Caption = 'Wali Kelas'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -16
+    Font.Height = -15
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold, fsItalic]
+    Font.Style = []
     ParentFont = False
     TabOrder = 0
     object Label4: TLabel
@@ -134,56 +134,56 @@ object formWaliKelas: TformWaliKelas
       Left = 152
       Top = 24
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 0
     end
     object edt2: TEdit
       Left = 152
       Top = 80
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 1
     end
     object edt3: TEdit
       Left = 152
       Top = 128
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 2
     end
     object edt4: TEdit
       Left = 152
       Top = 160
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 3
     end
     object edt5: TEdit
       Left = 152
       Top = 192
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 4
     end
     object edt6: TEdit
       Left = 152
       Top = 224
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 5
     end
     object edt7: TEdit
       Left = 152
       Top = 256
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 6
     end
     object edt8: TEdit
       Left = 152
       Top = 288
       Width = 121
-      Height = 27
+      Height = 26
       TabOrder = 7
     end
   end

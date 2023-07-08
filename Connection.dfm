@@ -1,6 +1,6 @@
 object formConnection: TformConnection
-  Left = 68
-  Top = 226
+  Left = 306
+  Top = 76
   Width = 1016
   Height = 540
   Caption = 'Connection'
