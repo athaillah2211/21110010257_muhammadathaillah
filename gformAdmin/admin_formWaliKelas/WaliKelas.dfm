@@ -1,7 +1,7 @@
 object formWaliKelas: TformWaliKelas
   Left = 177
   Top = 103
-  Width = 1044
+  Width = 634
   Height = 593
   Caption = 'Wali Kelas'
   Color = clBtnFace
@@ -251,7 +251,6 @@ object formWaliKelas: TformWaliKelas
     Properties.Strings = (
       'SELECT * from wali_kelas'
       'controls_cp=GET_ACP')
-    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'data_sekolah'
@@ -265,7 +264,6 @@ object formWaliKelas: TformWaliKelas
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from wali_kelas')
     Params = <>
