@@ -1,7 +1,7 @@
 object formWaliKelas: TformWaliKelas
-  Left = 177
-  Top = 103
-  Width = 634
+  Left = 315
+  Top = 126
+  Width = 809
   Height = 593
   Caption = 'Wali Kelas'
   Color = clBtnFace

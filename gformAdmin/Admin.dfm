@@ -1,10 +1,10 @@
 object formAdmin: TformAdmin
-  Left = 332
-  Top = 130
+  Left = 263
+  Top = 134
   Width = 909
   Height = 540
   Caption = 'Admin'
-  Color = clBtnFace
+  Color = clBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -15,7 +15,7 @@ object formAdmin: TformAdmin
   TextHeight = 13
   object Label1: TLabel
     Left = 352
-    Top = 80
+    Top = 96
     Width = 165
     Height = 23
     Caption = 'ADMIN SEKOLAH'
@@ -27,8 +27,8 @@ object formAdmin: TformAdmin
     ParentFont = False
   end
   object GrupBox1: TGroupBox
-    Left = 56
-    Top = 184
+    Left = 64
+    Top = 144
     Width = 233
     Height = 265
     Caption = 'Administrasi User'
@@ -57,7 +57,7 @@ object formAdmin: TformAdmin
   end
   object GrupBox2: TGroupBox
     Left = 328
-    Top = 184
+    Top = 144
     Width = 233
     Height = 265
     Caption = 'Administrasi Siswa'
@@ -112,8 +112,8 @@ object formAdmin: TformAdmin
     end
   end
   object GrupBox3: TGroupBox
-    Left = 600
-    Top = 184
+    Left = 592
+    Top = 152
     Width = 233
     Height = 265
     Caption = 'Administrasi Sekolah'

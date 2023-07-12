@@ -4,7 +4,7 @@ object formKelas: TformKelas
   Width = 621
   Height = 540
   Caption = 'Kelas'
-  Color = clBtnFace
+  Color = 4227327
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -14,8 +14,8 @@ object formKelas: TformKelas
   PixelsPerInch = 96
   TextHeight = 13
   object dbgrdKelas: TDBGrid
-    Left = 72
-    Top = 280
+    Left = 40
+    Top = 264
     Width = 465
     Height = 177
     DataSource = formConnection.dsKelasAdmin
@@ -33,11 +33,13 @@ object formKelas: TformKelas
     Width = 361
     Height = 201
     Caption = 'Kelas'
+    Color = 33023
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = [fsBold, fsItalic]
+    ParentColor = False
     ParentFont = False
     TabOrder = 1
     object Label1: TLabel
@@ -107,7 +109,7 @@ object formKelas: TformKelas
     end
     object txtJurusan: TEdit
       Left = 152
-      Top = 128
+      Top = 136
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
