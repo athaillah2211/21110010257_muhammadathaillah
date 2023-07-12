@@ -1,10 +1,10 @@
 object formReport: TformReport
-  Left = 289
-  Top = 77
-  Width = 1044
+  Left = 479
+  Top = 94
+  Width = 659
   Height = 496
   Caption = 'Report'
-  Color = clBtnFace
+  Color = clAqua
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -19,6 +19,8 @@ object formReport: TformReport
     Width = 377
     Height = 233
     Caption = 'Admin'
+    Color = clWhite
+    ParentColor = False
     TabOrder = 0
     object GroupBox2: TGroupBox
       Left = 24
