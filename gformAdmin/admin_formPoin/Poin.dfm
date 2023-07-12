@@ -1,10 +1,10 @@
 object formPoin: TformPoin
-  Left = 457
-  Top = 118
-  Width = 649
+  Left = 329
+  Top = 96
+  Width = 707
   Height = 540
   Caption = 'Poin'
-  Color = clBtnFace
+  Color = clYellow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -176,10 +176,11 @@ object formPoin: TformPoin
     TabOrder = 3
   end
   object DBGrid1: TDBGrid
-    Left = 40
-    Top = 288
-    Width = 561
-    Height = 185
+    Left = 32
+    Top = 280
+    Width = 601
+    Height = 177
+    Color = clWhite
     DataSource = formConnection.dsPoinAdmin
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
